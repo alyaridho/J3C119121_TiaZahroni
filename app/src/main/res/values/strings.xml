@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yummy Food Bogor</string>
+    <string-array name="jasakurir">
+        <item>JNE</item>
+        <item>Sicepat</item>
+        <item>JNT Express</item>
+    </string-array>
+</resources>

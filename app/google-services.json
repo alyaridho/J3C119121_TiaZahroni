@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1013673276821",
+    "project_id": "j3c119121-tiazahroni",
+    "storage_bucket": "j3c119121-tiazahroni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013673276821:android:ee81caf304b4fa904cb29c",
+        "android_client_info": {
+          "package_name": "com.example.j3c119121_tiazahroni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013673276821-6hkmh9is7125vacr2rijuljrhvelaa37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUPbBcG4SMg91F-CcV4rVjq0IDKLI7IlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013673276821-6hkmh9is7125vacr2rijuljrhvelaa37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

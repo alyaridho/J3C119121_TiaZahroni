@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/pink_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Form Order"
+                android:textSize="40dp"
+                android:fontFamily="cursive"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nama :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-smallcaps"
+                ></TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:hint="Masukkan Nama"
+                android:textSize="12dp"
+                android:fontFamily="monospace"
+                android:id="@+id/etnama"
+                android:autofillHints=""></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Alamat :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-smallcaps"
+                ></TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Masukkan Alamat"
+                android:textSize="12dp"
+                android:fontFamily="monospace"
+                android:id="@+id/etalamat"
+                ></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Pilih Menu:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-smallcaps"
+                ></TextView>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bolu Ulangtahun - Habibie"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="15dp"
+                    android:id="@+id/rb1"
+                    android:checked="true"
+                    ></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mie Pelangi - Yanimi"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="15dp"
+                    android:id="@+id/rb2"></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abon Tongkol - A dan N"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="15dp"
+                    android:id="@+id/rb3"></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kue Kering - Winnie"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="15dp"
+                    android:id="@+id/rb4"></RadioButton>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Pilih Varian:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-smallcaps"
+                ></TextView>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keju"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="15dp"
+                android:id="@+id/cb1"
+                ></CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coklat"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="15dp"
+                android:id="@+id/cb2"></CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vanilla"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="15dp"
+                android:id="@+id/cb3"></CheckBox>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Pilih Jasa Pengiriman:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-smallcaps"
+                ></TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp1"
+                android:entries="@array/jasakurir"></Spinner>
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Out"
+                android:onClick="checkout"
+                ></Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
